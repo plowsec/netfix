@@ -15,7 +15,6 @@
 #define closesocket(s) close(s) //closesocket is from winsock2.h as well
 
 //type definitions of Microsoft
-typedef int SOCKET ;
 typedef struct sockaddr_in SOCKADDR_IN ;
 typedef struct sockaddr SOCKADDR ;
 typedef struct in_addr IN_ADDR ;
@@ -111,38 +110,72 @@ std::string HTTPRequest::getResource(std::string url)   {
 
 }
 
+int HTTPRequest::getPort(std::string url, int port) {
+
+    if(port == 0)    {
+
+        if(isHTTPS(url))
+            return Constants::DEFAULT_HTTPS_PORT;
+
+        return Constants::DEFAULT_HTTP_PORT;
+    }
+
+    return port;
+}
+
 std::string HTTPRequest::get(std::string url, int port, std::string opt_headers)    {
+
+    std::string hostname = "";
+    std::string resource = "";
+    std::string response = "";
+
+    int httpPort = 0;
+    SOCKET sock = 0;
 
     if(isSchemaMissing(url))
         throw Exception("Missing schema. Perhaps you meant http://" + url + " ?");
 
-    if(isHTTPS(url))
+    hostname = getHost(url);
+    resource = getResource(url);
+    httpPort = getPort(url, port);
+
+    std::cout << "[*] Host : " << hostname << std::endl;
+    std::cout << "[*] Resource : " << resource << std::endl;
+    std::cout << "[*] Port : " << httpPort << std::endl;
+
+    std::string http_request = "";
+    http_request += "GET /" + resource + " HTTP/1.1\n";
+    http_request += "Host: " + hostname + "\n";
+    http_request += "Connection: close\n";
+    http_request += "\n";
+
+    //Windows specific code
+    initWS();
+
+    sock = create_socket(hostname, httpPort);
+
+    if(isHTTPS(url))    {
         std::cout << "[*] SSL : yes" << std::endl;
+        response = secureRequest(http_request, &sock);
+    }
 
-    else
+    else    {
         std::cout << "[*] SSL : no" << std::endl;
+        response = simpleRequest(http_request, &sock);
+    }
 
-    std::cout << "[*] Host : " << getHost(url) << std::endl;
-    std::cout << "[*] Resource : " << getResource(url) << std::endl;
+    closesocket(sock);
+    endWS();
 
-    return getHost(url);
+    return response;
 
 }
 
-std::string HTTPRequest::request()  {
+SOCKET HTTPRequest::create_socket(std::string hostname, int port)   {
 
-    //Windows specific code
-    try {
-        init();
-    }
-
-    catch(const std::exception &e) {
-        std::cout << e.what();
-
-        //pass the exception to the caller
-        throw;
-    }
-
+    struct hostent *hostinfo = NULL;
+    SOCKADDR_IN sin = {0};
+    SOCKET sock = 0;
 
     /*creation of the socket.
         ** domain : AF_INET => protocol TCP/IP
@@ -150,25 +183,22 @@ std::string HTTPRequest::request()  {
         ** protocol : 0 to let the OS choose the most appropriate protocol
     */
 
-    SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+    sock = socket(AF_INET, SOCK_STREAM, 0);
+
     if(sock == INVALID_SOCKET)  {
         int error = sock_error();
         throw Exception("socket() failed. Error code : ", error);
     }
 
-    struct hostent *hostinfo = NULL;
-    SOCKADDR_IN sin = {0};
-    std::string hostname = "google.com";
-
     hostinfo = gethostbyname(hostname.c_str());
 
     if(hostinfo == NULL)    {
 
-        throw Exception("Unknown host : " + hostname, 1);
+        throw Exception("Unknown host : " + hostname);
     }
 
     sin.sin_addr = *(IN_ADDR *) hostinfo->h_addr;
-    sin.sin_port = htons(443);
+    sin.sin_port = htons(port);
     sin.sin_family = AF_INET;
 
     if(connect(sock, (SOCKADDR *) &sin, sizeof(SOCKADDR)) == SOCKET_ERROR)  {
@@ -176,46 +206,57 @@ std::string HTTPRequest::request()  {
         throw Exception("connect() failed. Error code : ", error);
     }
 
-    std::string resource = "index.html";
-    std::string http_request = "";
-    http_request += "GET /" + resource + " HTTP/1.1\n";
-    http_request += "Host: " + hostname + "\n";
-    http_request += "Connection: close\n";
-    http_request += "\n";
+    return sock;
+}
+
+std::string HTTPRequest::simpleRequest(std::string content, SOCKET *sock) {
+
+    char buffer[Constants::RESPONSE_MAX_SIZE];
+    int n = 0;
+
+    if(send(*sock, content.c_str(), content.size(), 0) < 0)    {
+        int error = sock_error();
+        throw Exception("send() failed. Error code : ", error);
+    }
+
+    if((n = recv(*sock, buffer, sizeof(buffer) -1, 0)) < 0)  {
+        int error = sock_error();
+        throw Exception("send() failed. Error code : ", error);
+    }
+
+    buffer[n] = '\0';
+
+    return std::string(buffer);
+}
+
+std::string HTTPRequest::secureRequest(std::string content, SOCKET *sock) {
+
+    char buffer[Constants::RESPONSE_MAX_SIZE];
+    int bytes = 0;
 
     SSL_load_error_strings();
     SSL_library_init();
     SSL_CTX *ssl_ctx = SSL_CTX_new(SSLv23_client_method());
 
     if(ssl_ctx == NULL) {
-            std::cout << "fail" << std::endl;
+        std::cout << "fail" << std::endl;
     }
+
     SSL *conn = SSL_new(ssl_ctx);
-    SSL_set_fd(conn, sock);
+    SSL_set_fd(conn, *sock);
+
     if(SSL_connect(conn) != 1)  {
-            std::cout << "failsdsd" << std::endl;
+        std::cout << "failsdsd" << std::endl;
     }
-    SSL_write(conn, http_request.c_str(),strlen(http_request.c_str()));
-    /*if(send(sock, http_request.c_str(), http_request.size(), 0) < 0)    {
-        int error = sock_error();
-        throw Exception("send() failed. Error code : ", error);
-    }*/
 
-    char buffer[4096];
-//    int n = 0;
+    SSL_write(conn, content.c_str(), strlen(content.c_str()));
 
-    int bytes = SSL_read(conn, buffer, sizeof(buffer));
-    /*if((n = recv(sock, buffer, sizeof(buffer) -1, 0)) < 0)  {
-        int error = sock_error();
-        throw Exception("send() failed. Error code : ", error);
-    }*/
-
-    //buffer[n] = '\0';
+    bytes = SSL_read(conn, buffer, sizeof(buffer));
     buffer[bytes] = 0;
-    end();
+
     SSL_free(conn);
-    closesocket(sock);
     SSL_CTX_free(ssl_ctx);
+
     return std::string(buffer);
 }
 
@@ -228,7 +269,7 @@ int HTTPRequest::sock_error()   {
 #endif
 }
 
-void HTTPRequest::init()    {
+void HTTPRequest::initWS()    {
 #ifdef WIN32
 
     //the WSAData struct will be filled by WSAStartup and will contain informations about the Windows Socket implementation
@@ -245,7 +286,7 @@ void HTTPRequest::init()    {
 #endif
 }
 
-void HTTPRequest::end() {
+void HTTPRequest::endWS() {
 #ifdef WIN32
 
     //Terminate the use of the Winsock.dll
