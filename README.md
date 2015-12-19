@@ -1,6 +1,6 @@
 # netfix
 
-A lightweight, cross-paltform HTTP library implementation written in C++
+A lightweight, cross-paltform HTTP library written in C++
 
 # contributions guidelines
 * We are doing art, we write beautiful code
