@@ -158,7 +158,7 @@ std::string HTTPRequest::request()  {
 
     struct hostent *hostinfo = NULL;
     SOCKADDR_IN sin = {0};
-    std::string hostname = "***REMOVED***";
+    std::string hostname = "google.com";
 
     hostinfo = gethostbyname(hostname.c_str());
 
