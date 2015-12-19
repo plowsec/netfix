@@ -20,7 +20,7 @@ typedef struct sockaddr_in SOCKADDR_IN ;
 typedef struct sockaddr SOCKADDR ;
 typedef struct in_addr IN_ADDR ;
 #else
-#error : not available for your platform
+#error : not available for your platform (yet)
 #endif
 
 #include "HTTPRequest.h"
