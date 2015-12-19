@@ -15,4 +15,4 @@ A lightweight, cross-paltform HTTP library implementation written in C++
 * Extend the current code to make an Object Oriented version of it (currently everything is static)
 * POST
 * File upload
-
+* Follow redirect (hmm make the option available)
