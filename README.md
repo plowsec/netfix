@@ -9,6 +9,7 @@ A lightweight, cross-paltform HTTP library written in C++
 * K.I.S.S (Keep it Simple, Stupid)
 
 # TODO
+* CMake with profiles for each platform
 * Certs verification
 * Remove all the hardcoded stuff (done, if you find anything I might have forgot let me know)
 * ~~Distinguish dynamically HTTP from HTTPS (only SSL currently, so divide the appropriate parts into functions) (and conquer)~~
@@ -33,3 +34,4 @@ A lightweight, cross-paltform HTTP library written in C++
 * Configuration Properties/C/C++/Code Generation/Runtime Library => /MT (if you want to have a statically linked binary)
 * Linker/General/Additional Library Directiories: C:\OpenSSL-Win32\lib
 * Linker/Input/Additional Dependencies : libeay32MT.lib;ssleay32MT.lib (the statically linked ones in C:\OpenSSL-Win32\lib\VC\static)
+* Other linker additional dependencies : Ws2_32.lib (sockets) legacy_stdio_definitions.lib (the openssl statically linked libs I used were compiled with an older version of MSVC. See main.cpp for details).
