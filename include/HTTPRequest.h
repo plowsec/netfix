@@ -43,7 +43,7 @@ class HTTPRequest
         static void initWS();
         static void endWS();
         static int sock_error();
-        static SOCKET create_socket(std::string hostname, int port);
+        static SOCKET createSocket(std::string hostname, int port);
         static std::string simpleRequest(std::string content, SOCKET *sock);
         static std::string secureRequest(std::string content, SOCKET *sock);
 

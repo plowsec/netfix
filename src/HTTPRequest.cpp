@@ -138,7 +138,7 @@ std::string HTTPRequest::get(std::string url, int port, std::string opt_headers)
     //Windows specific code
     initWS();
 
-    sock = create_socket(hostname, httpPort);
+    sock = createSocket(hostname, httpPort);
 
     if(isHTTPS(url))    {
         std::cout << "[*] SSL : yes" << std::endl;
@@ -157,7 +157,7 @@ std::string HTTPRequest::get(std::string url, int port, std::string opt_headers)
 
 }
 
-SOCKET HTTPRequest::create_socket(std::string hostname, int port)   {
+SOCKET HTTPRequest::createSocket(std::string hostname, int port)   {
 
     struct hostent *hostinfo = NULL;
     SOCKADDR_IN sin = {0};
