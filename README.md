@@ -11,7 +11,7 @@ A lightweight, cross-paltform HTTP library written in C++
 # TODO
 * CMake with profiles for each platform
 * Certs verification
-* Remove all the hardcoded stuff (done, if you find anything I might have forgot let me know)
+* Remove all the hardcoded stuff (done, if you find anything I might have forgotten let me know)
 * ~~Distinguish dynamically HTTP from HTTPS (only SSL currently, so divide the appropriate parts into functions) (and conquer)~~
 * User-agent, HTTP version...etc -> give more control to the user
 * Extend the current code to make an Object Oriented version of it (currently everything is static)
