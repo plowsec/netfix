@@ -19,11 +19,15 @@ A lightweight, cross-paltform HTTP library written in C++
 * Follow redirect (hmm make the option available)
 * GET RID OF THIS HEAVY **** OPENSSL WHICH PRODUCE A 1.3 *** MEGABYTES BINARY ON WINDOWS OMFG INSTEAD OF 189 KILOBYTES
 
-#Setup
-##Linux 
+# Setup
+
+## Linux
+
 * Download the source code and compile. Don't forget to add the flags -lcrypto -lssl
 * OPTIONNALLY in C::B (Code::Blocks) : Build Options / Search Directories => the "include" folder (otherwise it will complain it can't find stuff)
-##Windows with MSVC
+
+## Windows with MSVC
+
 * Download and install openssl (32 bits, full) : http://slproweb.com/products/Win32OpenSSL.html
 * Configuration Properties/C/C++/General/Additional Include Directories: openssl include folder (C:\OpenSSL-Win32\include)
 * Configuration Properties/C/C++/Code Generation/Runtime Library => /MT (if you want to have a statically linked binary)
