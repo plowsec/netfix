@@ -1,26 +1,12 @@
-#ifdef WIN32
-#include <winsock2.h>
 
-#elif defined (linux)
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h> //types in_addr, in_addr_t, in_port_t
-#include <unistd.h>
-#include <netdb.h> //gethostbyname
+//if the compiler is MSVC (as MSC_VER is also set by Intel Compiler, the condition had to be adapted)
+#if _MSC_VER && !__INTEL_COMPILER
+#include "stdafx.h"
 
-//compatibility with winsock2.h
-#define INVALID_SOCKET -1 //constant defined in winsock2.h
-#define SOCKET_ERROR -1 //constant defined in winsock2.h
-#define closesocket(s) close(s) //closesocket is from winsock2.h as well
+//gethostbyname is deprecated according to MSVC. We don't care.
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+#endif // _MSC_VER
 
-//type definitions of Microsoft
-typedef struct sockaddr_in SOCKADDR_IN ;
-typedef struct sockaddr SOCKADDR ;
-typedef struct in_addr IN_ADDR ;
-#else
-#error : not available for your platform (yet)
-#endif
 
 #include "HTTPRequest.h"
 #include "Exception.h"

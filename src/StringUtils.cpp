@@ -1,4 +1,9 @@
 
+//if the compiler is MSVC (as MSC_VER is also set by Intel Compiler, the condition had to be adapted)
+#if _MSC_VER && !__INTEL_COMPILER
+#include "stdafx.h"
+#endif // _MSC_VER
+
 #include "StringUtils.h"
 
 

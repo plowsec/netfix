@@ -1,12 +1,35 @@
 #ifndef HTTPREQUEST_H
 #define HTTPREQUEST_H
 
-#include <iostream>
+#if defined(WIN32)
+#include <winsock2.h>
+//if your compiler ignore the line below, simply link ws2_32.lib
+#pragma comment(lib, "Ws2_32.lib")
 
-#if defined(linux)
+#elif defined (linux)
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h> //types in_addr, in_addr_t, in_port_t
+#include <unistd.h>
+#include <netdb.h> //gethostbyname
+
+//compatibility with winsock2.h
+#define INVALID_SOCKET -1 //constant defined in winsock2.h
+#define SOCKET_ERROR -1 //constant defined in winsock2.h
+#define closesocket(s) close(s) //closesocket is from winsock2.h as well
+
+//type definitions of Microsoft
+typedef struct sockaddr_in SOCKADDR_IN;
+typedef struct sockaddr SOCKADDR;
+typedef struct in_addr IN_ADDR;
 //Windef.h
-typedef int SOCKET ;
+typedef int SOCKET;
+#else
+#error : not available for your platform (yet)
 #endif
+
+#include <iostream>
 
 class HTTPRequest
 {
@@ -20,7 +43,7 @@ class HTTPRequest
         static void initWS();
         static void endWS();
         static int sock_error();
-        static int create_socket(std::string hostname, int port);
+        static SOCKET create_socket(std::string hostname, int port);
         static std::string simpleRequest(std::string content, SOCKET *sock);
         static std::string secureRequest(std::string content, SOCKET *sock);
 
