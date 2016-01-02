@@ -46,12 +46,11 @@ Unfortunately I wasn't able to find statically linked libs of openssl compiled w
 * Install mingw and [MSYS](http://www.mingw.org/wiki/MSYS) with the help of mingw-get-setup.exe from http://sourceforge.net/projects/mingw/files/Installer/
 * Install ActiveState Perl from https://www.activestate.com/activeperl/downloads
 * Run the following commands from a MSYS console (NOTE : /c/openssl is the path to the openssl source folder you just downloaded):
-
-..* cd /c/openssl-master
-..* perl Configure mingw no-shared --prefix=/c/openssl-master
-..* make depend
-..* make
-..* make install
+  * cd /c/openssl-master
+  * perl Configure mingw no-shared --prefix=/c/openssl-master
+  * make depend
+  * make
+  * make install
 
 * You should now have a working copy of libcrypto.a and libssl.a
 * Link these libs to your compiler in this order : libssl.a libcrypto (this is important)
