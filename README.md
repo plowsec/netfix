@@ -38,7 +38,7 @@ A lightweight, cross-paltform HTTP library written in C++
 * Linker/Input/Additional Dependencies : libeay32MT.lib;ssleay32MT.lib (the statically linked ones in C:\OpenSSL-Win32\lib\VC\static)
 * Other linker additional dependencies : Ws2_32.lib (sockets) legacy_stdio_definitions.lib (the openssl statically linked libs I used were compiled with an older version of MSVC. See main.cpp for details).
 
-### mingw
+### MinGW
 
 Unfortunately I wasn't able to find statically linked libs of openssl compiled with the right version of mingw. So here are the steps to successfully build everything (you can use mine if you don't want to compile your own) :
 * Download the openssl sources from https://github.com/openssl/openssl/archive/master.zip
