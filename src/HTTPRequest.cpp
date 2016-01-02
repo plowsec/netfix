@@ -2,6 +2,9 @@
 //if the compiler is MSVC (as MSC_VER is also set by Intel Compiler, the condition had to be adapted)
 #if _MSC_VER && !__INTEL_COMPILER
 #include "stdafx.h"
+//if your compiler ignore the line below, simply link ws2_32.lib
+#pragma comment(lib, "Ws2_32.lib")
+//libeay32 and ssleay32
 
 //gethostbyname is deprecated according to MSVC. We don't care.
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
@@ -223,7 +226,8 @@ std::string HTTPRequest::secureRequest(std::string content, SOCKET *sock) {
 
     SSL_load_error_strings();
     SSL_library_init();
-    SSL_CTX *ssl_ctx = SSL_CTX_new(SSLv23_client_method());
+    //SSLv23_client_method is deprecated (and not exported in the libs I compiled...)
+    SSL_CTX *ssl_ctx = SSL_CTX_new(TLSv1_1_client_method());
 
     if(ssl_ctx == NULL) {
         std::cout << "fail" << std::endl;

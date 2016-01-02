@@ -3,8 +3,6 @@
 
 #if defined(WIN32)
 #include <winsock2.h>
-//if your compiler ignore the line below, simply link ws2_32.lib
-#pragma comment(lib, "Ws2_32.lib")
 
 #elif defined (linux)
 #include <sys/types.h>
