@@ -5,5 +5,6 @@ bin/
 *.cbp
 *.layout
 *.exe
-
+img/*
+.vs/*
 
