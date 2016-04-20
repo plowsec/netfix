@@ -2,8 +2,11 @@
 
 A lightweight, cross-paltform HTTP library written in C++
 
+#Announcement
+netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary size is finally acceptable
+
 # Contributions guidelines
-* We are doing art, we write beautiful code
+* We are doing art, we write beautiful code (critics are most welcome)
 * Cross-platform, remember ?
 * Must be lightweight
 * K.I.S.S (Keep it Simple, Stupid)
@@ -16,18 +19,31 @@ A lightweight, cross-paltform HTTP library written in C++
 * User-agent, HTTP version...etc -> give more control to the user
 * Extend the current code to make an Object Oriented version of it (currently everything is static)
 * POST
-* File upload
+* File upload (in progress)
 * Follow redirect (hmm make the option available)
-* GET RID OF THIS HEAVY **** OPENSSL WHICH PRODUCE A 1.3 *** MEGABYTES BINARY ON WINDOWS OMFG INSTEAD OF 189 KILOBYTES
+* ~~GET RID OF THIS HEAVY **** OPENSSL WHICH PRODUCE A 1.3 *** MEGABYTES BINARY ON WINDOWS OMFG INSTEAD OF 189 KILOBYTES ~~ (done)
+* Finish to implement all the specifications of HTTP/HTTPS
+* Refactor
 
 # Setup
+Since the migration of netfix to [WolfSSL] (https://github.com/wolfSSL/wolfssl), the openssl part is obsolete but kept for future reference in case you want to switch back to openssl (for this you would just have to comment/uncomment the correct includes instructions in HTTPRequest.cpp). 
 
 ## Linux
+* Download [wolfSSL] (https://wolfssl.com/wolfSSL/download/downloadForm.php) and unzip it
+* cd into wolfssl directory
+* ./configure --enable-static --enable-opensslextra --disable-fastmat
+* make
+* sudo make install
+* Now you can compile netfix, but don't forget to link against wolfssl and m :p
+* If you want to statically compile netfix, build with -Xlinker -Bstatic -lwolfssl -Xlinker -Bdynamic  -lm :
+* ![Code::Blocks configuration] (https://cloud.githubusercontent.com/assets/13260466/14666556/74859822-06da-11e6-80ca-16b0cd1e8e98.png)
+* 
+## Linux (openssl version)
 
 * Download the source code and compile. Don't forget to add the flags -lcrypto -lssl
 * OPTIONNALLY in C::B (Code::Blocks) : Build Options / Search Directories => the "include" folder (otherwise it will complain it can't find stuff)
 
-## Windows
+## Windows (openssl version)
 
 ### MSVC
 
