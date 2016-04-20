@@ -51,7 +51,8 @@ Since the migration of netfix to [WolfSSL] (https://github.com/wolfSSL/wolfssl),
 
 ### MinGW
 * Wasn't able to do it. Please help me.
-* 
+
+ 
 ## Linux (openssl version)
 
 * Download the source code and compile. Don't forget to add the flags -lcrypto -lssl
