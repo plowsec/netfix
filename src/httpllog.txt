@@ -1,0 +1,260 @@
+08:26:36.692867 IP6 (hlim 51, next-header TCP (6) payload length: 73) wl-in-x10.1e100.net.imaps > tars.35946: Flags [P.], cksum 0x20c6 (correct), seq 3827642402:3827642443, ack 1724110758, win 347, options [nop,nop,TS val 2235788539 ecr 56885244], length 41
+08:26:36.693155 IP6 (hlim 64, next-header TCP (6) payload length: 71) tars.35946 > wl-in-x10.1e100.net.imaps: Flags [P.], cksum 0x3d11 (correct), seq 1:40, ack 41, win 431, options [nop,nop,TS val 56885262 ecr 2235788539], length 39
+08:26:36.756091 IP6 (hlim 51, next-header TCP (6) payload length: 32) wl-in-x10.1e100.net.imaps > tars.35946: Flags [.], cksum 0xdfe1 (correct), seq 41, ack 40, win 347, options [nop,nop,TS val 2235788602 ecr 56885262], length 0
+08:26:36.764323 IP6 (hlim 51, next-header TCP (6) payload length: 70) wl-in-x10.1e100.net.imaps > tars.35946: Flags [P.], cksum 0x88b8 (correct), seq 41:79, ack 40, win 347, options [nop,nop,TS val 2235788609 ecr 56885262], length 38
+08:26:36.764447 IP6 (hlim 51, next-header TCP (6) payload length: 71) wl-in-x10.1e100.net.imaps > tars.35946: Flags [P.], cksum 0x806b (correct), seq 79:118, ack 40, win 347, options [nop,nop,TS val 2235788609 ecr 56885262], length 39
+08:26:36.764485 IP6 (hlim 64, next-header TCP (6) payload length: 32) tars.35946 > wl-in-x10.1e100.net.imaps: Flags [.], cksum 0xdf24 (correct), seq 40, ack 118, win 431, options [nop,nop,TS val 56885283 ecr 2235788609], length 0
+08:26:36.766342 IP6 (hlim 64, next-header TCP (6) payload length: 70) tars.35946 > wl-in-x10.1e100.net.imaps: Flags [P.], cksum 0x85e3 (correct), seq 40:78, ack 118, win 431, options [nop,nop,TS val 56885284 ecr 2235788609], length 38
+08:26:36.790089 IP6 (hlim 51, next-header TCP (6) payload length: 32) wl-in-x10.1e100.net.imaps > tars.35946: Flags [.], cksum 0xdf37 (correct), seq 118, ack 78, win 347, options [nop,nop,TS val 2235788635 ecr 56885284], length 0
+08:26:36.833527 IP6 (hlim 51, next-header TCP (6) payload length: 69) wl-in-x10.1e100.net.imaps > tars.35946: Flags [P.], cksum 0xf7e4 (correct), seq 118:155, ack 78, win 347, options [nop,nop,TS val 2235788671 ecr 56885284], length 37
+08:26:36.838626 IP (tos 0x0, ttl 1, id 18061, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.114.205.63308 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:36.871947 IP6 (hlim 64, next-header TCP (6) payload length: 32) tars.35946 > wl-in-x10.1e100.net.imaps: Flags [.], cksum 0xde7a (correct), seq 78, ack 155, win 431, options [nop,nop,TS val 56885316 ecr 2235788671], length 0
+08:26:37.152386 IP (tos 0x0, ttl 1, id 8105, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.53163 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:37.361349 IP (tos 0x0, ttl 1, id 8106, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:37.465898 IP (tos 0x0, ttl 1, id 8107, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.53163 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:37.570077 IP (tos 0x0, ttl 1, id 8108, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:37.645503 IP (tos 0x0, ttl 64, id 12033, offset 0, flags [DF], proto UDP (17), length 118)
+    poclercs11-me.sofr.hefr.lan.56965 > google-public-dns-a.google.com.domain: [udp sum ok] 15958+ PTR? 5.9.f.e.a.7.e.f.f.f.5.3.e.7.2.d.2.1.1.1.b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. (90)
+08:26:37.675414 IP (tos 0x0, ttl 1, id 15665, offset 0, flags [none], proto UDP (17), length 463)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 435
+08:26:37.675431 IP (tos 0x0, ttl 1, id 15666, offset 0, flags [none], proto UDP (17), length 527)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 499
+08:26:37.675444 IP (tos 0x0, ttl 1, id 15667, offset 0, flags [none], proto UDP (17), length 515)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 487
+08:26:37.675896 IP (tos 0x0, ttl 1, id 15668, offset 0, flags [none], proto UDP (17), length 543)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 515
+08:26:37.691180 IP (tos 0x0, ttl 51, id 28318, offset 0, flags [none], proto UDP (17), length 181)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.56965: [udp sum ok] 15958 NXDomain q: PTR? 5.9.f.e.a.7.e.f.f.f.5.3.e.7.2.d.2.1.1.1.b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. 0/1/0 ns: b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. SOA hefrns02.hefr.ch. hostmaster.hefr.ch. 244976 10800 1080 2592000 900 (153)
+08:26:37.691610 IP (tos 0x0, ttl 64, id 12037, offset 0, flags [DF], proto UDP (17), length 118)
+    poclercs11-me.sofr.hefr.lan.39996 > google-public-dns-a.google.com.domain: [udp sum ok] 22756+ PTR? 0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.0.c.0.c.0.0.4.0.5.4.1.0.0.a.2.ip6.arpa. (90)
+08:26:37.716201 IP (tos 0x0, ttl 51, id 20097, offset 0, flags [none], proto UDP (17), length 151)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.39996: [udp sum ok] 22756 q: PTR? 0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.0.c.0.c.0.0.4.0.5.4.1.0.0.a.2.ip6.arpa. 1/0/0 0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.0.c.0.c.0.0.4.0.5.4.1.0.0.a.2.ip6.arpa. PTR wl-in-x10.1e100.net. (123)
+08:26:37.716400 IP (tos 0x0, ttl 64, id 12040, offset 0, flags [DF], proto UDP (17), length 74)
+    poclercs11-me.sofr.hefr.lan.55342 > google-public-dns-a.google.com.domain: [udp sum ok] 2198+ PTR? 250.255.255.239.in-addr.arpa. (46)
+08:26:37.726321 IP (tos 0x0, ttl 51, id 28332, offset 0, flags [none], proto UDP (17), length 131)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.55342: [udp sum ok] 2198 NXDomain q: PTR? 250.255.255.239.in-addr.arpa. 0/1/0 ns: 239.in-addr.arpa. SOA sns.dns.icann.org. noc.dns.icann.org. 2015080453 7200 3600 604800 3600 (103)
+08:26:37.726540 IP (tos 0x0, ttl 64, id 12043, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.44276 > google-public-dns-a.google.com.domain: [udp sum ok] 47036+ PTR? 205.114.98.160.in-addr.arpa. (45)
+08:26:37.775127 IP (tos 0x0, ttl 51, id 20102, offset 0, flags [none], proto UDP (17), length 136)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.44276: [udp sum ok] 47036 NXDomain q: PTR? 205.114.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (108)
+08:26:37.775400 IP (tos 0x0, ttl 64, id 12044, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.33772 > google-public-dns-a.google.com.domain: [udp sum ok] 27597+ PTR? 142.112.98.160.in-addr.arpa. (45)
+08:26:37.778803 IP (tos 0x0, ttl 1, id 15669, offset 0, flags [none], proto UDP (17), length 529)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 501
+08:26:37.779311 IP (tos 0x0, ttl 1, id 15670, offset 0, flags [none], proto UDP (17), length 472)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 444
+08:26:37.821388 IP (tos 0x0, ttl 51, id 28342, offset 0, flags [none], proto UDP (17), length 113)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.33772: [udp sum ok] 27597 q: PTR? 142.112.98.160.in-addr.arpa. 1/0/0 142.112.98.160.in-addr.arpa. PTR pohaasm10-me.sofr.hefr.lan. (85)
+08:26:38.091995 IP (tos 0x0, ttl 1, id 10178, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.115.30.54174 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:38.196653 IP (tos 0x0, ttl 1, id 8406, offset 0, flags [none], proto UDP (17), length 305)
+    potelecom60.sofr.hefr.lan.61946 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 277
+08:26:38.614492 IP (tos 0x0, ttl 1, id 8805, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.115.76.63003 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:38.648731 IP (tos 0x0, ttl 64, id 12091, offset 0, flags [DF], proto UDP (17), length 66)
+    poclercs11-me.sofr.hefr.lan.47533 > google-public-dns-a.google.com.domain: [udp sum ok] 2033+ PTR? 8.8.8.8.in-addr.arpa. (38)
+08:26:38.673474 IP (tos 0x0, ttl 51, id 19560, offset 0, flags [none], proto UDP (17), length 110)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.47533: [udp sum ok] 2033 q: PTR? 8.8.8.8.in-addr.arpa. 1/0/0 8.8.8.8.in-addr.arpa. PTR google-public-dns-a.google.com. (82)
+08:26:38.673615 IP (tos 0x0, ttl 64, id 12097, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.48879 > google-public-dns-a.google.com.domain: [udp sum ok] 65100+ PTR? 231.115.98.160.in-addr.arpa. (45)
+08:26:38.722857 IP (tos 0x0, ttl 51, id 2263, offset 0, flags [none], proto UDP (17), length 114)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.48879: [udp sum ok] 65100 q: PTR? 231.115.98.160.in-addr.arpa. 1/0/0 231.115.98.160.in-addr.arpa. PTR poclercs11-me.sofr.hefr.lan. (86)
+08:26:38.723023 IP (tos 0x0, ttl 64, id 12102, offset 0, flags [DF], proto UDP (17), length 72)
+    poclercs11-me.sofr.hefr.lan.42144 > google-public-dns-a.google.com.domain: [udp sum ok] 62795+ PTR? 17.115.98.160.in-addr.arpa. (44)
+08:26:38.769977 IP (tos 0x0, ttl 51, id 56196, offset 0, flags [none], proto UDP (17), length 113)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.42144: [udp sum ok] 62795 q: PTR? 17.115.98.160.in-addr.arpa. 1/0/0 17.115.98.160.in-addr.arpa. PTR pojernes11-me.sofr.hefr.lan. (85)
+08:26:38.770220 IP (tos 0x0, ttl 64, id 12116, offset 0, flags [DF], proto UDP (17), length 72)
+    poclercs11-me.sofr.hefr.lan.46280 > google-public-dns-a.google.com.domain: [udp sum ok] 14189+ PTR? 30.115.98.160.in-addr.arpa. (44)
+08:26:38.818109 IP (tos 0x0, ttl 51, id 56236, offset 0, flags [none], proto UDP (17), length 135)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.46280: [udp sum ok] 14189 NXDomain q: PTR? 30.115.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (107)
+08:26:38.818331 IP (tos 0x0, ttl 64, id 12128, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.58989 > google-public-dns-a.google.com.domain: [udp sum ok] 65269+ PTR? 179.115.98.160.in-addr.arpa. (45)
+08:26:38.863251 IP (tos 0x0, ttl 51, id 60910, offset 0, flags [none], proto UDP (17), length 112)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.58989: [udp sum ok] 65269 q: PTR? 179.115.98.160.in-addr.arpa. 1/0/0 179.115.98.160.in-addr.arpa. PTR potelecom60.sofr.hefr.lan. (84)
+08:26:38.863401 IP (tos 0x0, ttl 64, id 12138, offset 0, flags [DF], proto UDP (17), length 72)
+    poclercs11-me.sofr.hefr.lan.42220 > google-public-dns-a.google.com.domain: [udp sum ok] 19020+ PTR? 76.115.98.160.in-addr.arpa. (44)
+08:26:38.912754 IP (tos 0x0, ttl 51, id 28401, offset 0, flags [none], proto UDP (17), length 135)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.42220: [udp sum ok] 19020 NXDomain q: PTR? 76.115.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (107)
+08:26:38.927578 IP (tos 0x0, ttl 1, id 31181, offset 0, flags [none], proto UDP (17), length 161)
+    podutoij12-me.sofr.hefr.lan.60075 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:38.928212 IP (tos 0x0, ttl 1, id 25878, offset 0, flags [none], proto UDP (17), length 161)
+    podutoij12-me.sofr.hefr.lan.58387 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.032412 IP (tos 0x0, ttl 1, id 13905, offset 0, flags [none], proto UDP (17), length 125)
+    160.98.115.176.57998 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 97
+08:26:39.032443 IP (tos 0x0, ttl 4, id 8109, offset 0, flags [none], proto UDP (17), length 129)
+    pohaasm10-me.sofr.hefr.lan.57013 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 101
+08:26:39.032449 IP (tos 0x0, ttl 1, id 24189, offset 0, flags [none], proto UDP (17), length 305)
+    160.98.115.124.51120 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 277
+08:26:39.033403 IP (tos 0x0, ttl 1, id 8110, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:39.136502 IP (tos 0x0, ttl 1, id 23142, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.114.221.57949 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.171157 IP6 (class 0xe0, hlim 255, next-header ICMPv6 (58) payload length: 64) gateway > ff02::1: [icmp6 sum ok] ICMP6, router advertisement, length 64
+	hop limit 64, Flags [none], pref medium, router lifetime 1800s, reachable time 0s, retrans time 0s
+	  source link-address option (1), length 8 (1): 00:08:e3:ff:fc:04
+	    0x0000:  0008 e3ff fc04
+	  mtu option (5), length 8 (1):  1500
+	    0x0000:  0000 0000 05dc
+	  prefix info option (3), length 32 (4): 2001:620:40b:1112::/64, Flags [onlink, auto], valid time 2592000s, pref. time 604800s
+	    0x0000:  40c0 0027 8d00 0009 3a80 0000 0000 2001
+	    0x0010:  0620 040b 1112 0000 0000 0000 0000
+08:26:39.241736 IP (tos 0x0, ttl 1, id 8111, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.58249 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:39.242841 IP (tos 0x0, ttl 1, id 8112, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:39.346784 IP (tos 0x0, ttl 1, id 8113, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.58249 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:39.346796 IP (tos 0x0, ttl 1, id 15678, offset 0, flags [none], proto UDP (17), length 161)
+    pojernes11-me.sofr.hefr.lan.54205 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.450155 IP (tos 0x0, ttl 1, id 521, offset 0, flags [none], proto UDP (17), length 161)
+    potaurea12-me.sofr.hefr.lan.57752 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.450171 IP (tos 0x0, ttl 1, id 55943, offset 0, flags [none], proto UDP (17), length 44)
+    eifrpoe00334.sofr.hefr.lan.63130 > all-systems.mcast.net.canon-bjnp2: [udp sum ok] UDP, length 16
+08:26:39.450188 IP (tos 0x0, ttl 4, id 8114, offset 0, flags [none], proto UDP (17), length 165)
+    pohaasm10-me.sofr.hefr.lan.57013 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 137
+08:26:39.554289 IP (tos 0x0, ttl 1, id 9394, offset 0, flags [none], proto UDP (17), length 305)
+    poterrema11-me.sofr.hefr.lan.57544 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 277
+08:26:39.554308 IP (tos 0x0, ttl 1, id 3160, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.115.133.64059 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.556701 IP (tos 0x0, ttl 64, id 12163, offset 0, flags [DF], proto UDP (17), length 55)
+    poclercs11-me.sofr.hefr.lan.36453 > google-public-dns-a.google.com.domain: [udp sum ok] 8183+ A? perdu.com. (27)
+08:26:39.584745 IP (tos 0x0, ttl 51, id 56718, offset 0, flags [none], proto UDP (17), length 71)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.36453: [udp sum ok] 8183 q: A? perdu.com. 1/0/0 perdu.com. A 208.97.177.124 (43)
+08:26:39.584841 IP (tos 0x0, ttl 64, id 53290, offset 0, flags [DF], proto TCP (6), length 60)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [S], cksum 0x634c (correct), seq 1145164635, win 29200, options [mss 1460,sackOK,TS val 56886129 ecr 0,nop,wscale 7], length 0
+08:26:39.652179 IP (tos 0x0, ttl 64, id 12192, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.44119 > google-public-dns-a.google.com.domain: [udp sum ok] 3606+ PTR? 166.112.98.160.in-addr.arpa. (45)
+08:26:39.682649 IP (tos 0x0, ttl 48, id 0, offset 0, flags [DF], proto TCP (6), length 52)
+    apache2-heavy.perrier.dreamhost.com.https > poclercs11-me.sofr.hefr.lan.48206: Flags [S.], cksum 0xda12 (correct), seq 3348703357, ack 1145164636, win 14600, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+08:26:39.682684 IP (tos 0x0, ttl 64, id 53291, offset 0, flags [DF], proto TCP (6), length 40)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [.], cksum 0x5308 (correct), seq 1, ack 1, win 229, length 0
+08:26:39.682728 IP (tos 0x0, ttl 64, id 53292, offset 0, flags [DF], proto TCP (6), length 424)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [P.], cksum 0x8749 (correct), seq 1:385, ack 1, win 229, length 384
+08:26:39.703714 IP (tos 0x0, ttl 51, id 56724, offset 0, flags [none], proto UDP (17), length 114)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.44119: [udp sum ok] 3606 q: PTR? 166.112.98.160.in-addr.arpa. 1/0/0 166.112.98.160.in-addr.arpa. PTR podutoij12-me.sofr.hefr.lan. (86)
+08:26:39.703836 IP (tos 0x0, ttl 64, id 12207, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.47574 > google-public-dns-a.google.com.domain: [udp sum ok] 24786+ PTR? 138.115.98.160.in-addr.arpa. (45)
+08:26:39.749495 IP (tos 0x0, ttl 51, id 28904, offset 0, flags [none], proto UDP (17), length 114)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.47574: [udp sum ok] 24786 q: PTR? 138.115.98.160.in-addr.arpa. 1/0/0 138.115.98.160.in-addr.arpa. PTR podutoij12-me.sofr.hefr.lan. (86)
+08:26:39.749624 IP (tos 0x0, ttl 64, id 12221, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.39279 > google-public-dns-a.google.com.domain: [udp sum ok] 59363+ PTR? 176.115.98.160.in-addr.arpa. (45)
+08:26:39.777324 IP (tos 0x0, ttl 48, id 46671, offset 0, flags [DF], proto TCP (6), length 40)
+    apache2-heavy.perrier.dreamhost.com.https > poclercs11-me.sofr.hefr.lan.48206: Flags [.], cksum 0x51f2 (correct), seq 1, ack 385, win 123, length 0
+08:26:39.778988 IP (tos 0x0, ttl 48, id 46672, offset 0, flags [DF], proto TCP (6), length 568)
+    apache2-heavy.perrier.dreamhost.com.https > poclercs11-me.sofr.hefr.lan.48206: Flags [P.], cksum 0x0dfe (correct), seq 1:529, ack 385, win 123, length 528
+08:26:39.779033 IP (tos 0x0, ttl 64, id 53293, offset 0, flags [DF], proto TCP (6), length 40)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [.], cksum 0x4f70 (correct), seq 385, ack 529, win 237, length 0
+08:26:39.779068 IP (tos 0x0, ttl 64, id 53294, offset 0, flags [DF], proto TCP (6), length 40)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [F.], cksum 0x4f6f (correct), seq 385, ack 529, win 237, length 0
+08:26:39.779285 IP (tos 0x0, ttl 48, id 46673, offset 0, flags [DF], proto TCP (6), length 40)
+    apache2-heavy.perrier.dreamhost.com.https > poclercs11-me.sofr.hefr.lan.48206: Flags [F.], cksum 0x4fe1 (correct), seq 529, ack 385, win 123, length 0
+08:26:39.779293 IP (tos 0x0, ttl 64, id 53295, offset 0, flags [DF], proto TCP (6), length 40)
+    poclercs11-me.sofr.hefr.lan.48206 > apache2-heavy.perrier.dreamhost.com.https: Flags [.], cksum 0x4f6e (correct), seq 386, ack 530, win 237, length 0
+08:26:39.798338 IP (tos 0x0, ttl 51, id 21084, offset 0, flags [none], proto UDP (17), length 136)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.39279: [udp sum ok] 59363 NXDomain q: PTR? 176.115.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (108)
+08:26:39.798535 IP (tos 0x0, ttl 64, id 12223, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.40815 > google-public-dns-a.google.com.domain: [udp sum ok] 26629+ PTR? 124.115.98.160.in-addr.arpa. (45)
+08:26:39.846743 IP (tos 0x0, ttl 51, id 61173, offset 0, flags [none], proto UDP (17), length 136)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.40815: [udp sum ok] 26629 NXDomain q: PTR? 124.115.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (108)
+08:26:39.846987 IP (tos 0x0, ttl 64, id 12227, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.40713 > google-public-dns-a.google.com.domain: [udp sum ok] 62156+ PTR? 221.114.98.160.in-addr.arpa. (45)
+08:26:39.867656 IP (tos 0x0, ttl 1, id 18125, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.114.205.63308 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:39.873701 IP (tos 0x0, ttl 48, id 46674, offset 0, flags [DF], proto TCP (6), length 40)
+    apache2-heavy.perrier.dreamhost.com.https > poclercs11-me.sofr.hefr.lan.48206: Flags [.], cksum 0x4fe0 (correct), seq 530, ack 386, win 123, length 0
+08:26:39.892278 IP (tos 0x0, ttl 51, id 61202, offset 0, flags [none], proto UDP (17), length 136)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.40713: [udp sum ok] 62156 NXDomain q: PTR? 221.114.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (108)
+08:26:39.892474 IP (tos 0x0, ttl 64, id 12231, offset 0, flags [DF], proto UDP (17), length 118)
+    poclercs11-me.sofr.hefr.lan.38649 > google-public-dns-a.google.com.domain: [udp sum ok] 24618+ PTR? 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+08:26:39.914473 IP (tos 0x0, ttl 51, id 28976, offset 0, flags [none], proto UDP (17), length 188)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.38649: [udp sum ok] 24618 NXDomain q: PTR? 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. 0/1/0 ns: ip6.arpa. SOA b.ip6-servers.arpa. hostmaster.icann.org. 2015122842 1800 900 604800 3600 (160)
+08:26:39.914668 IP (tos 0x0, ttl 64, id 12234, offset 0, flags [DF], proto UDP (17), length 118)
+    poclercs11-me.sofr.hefr.lan.35024 > google-public-dns-a.google.com.domain: [udp sum ok] 2041+ PTR? 4.0.c.f.f.f.e.f.f.f.3.e.8.0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. (90)
+08:26:40.173433 IP (tos 0x0, ttl 64, id 12245, offset 0, flags [DF], proto UDP (17), length 64)
+    poclercs11-me.sofr.hefr.lan.49084 > google-public-dns-a.google.com.domain: [udp sum ok] 25362+ A? openweathermap.org. (36)
+08:26:40.173444 IP (tos 0x0, ttl 64, id 12246, offset 0, flags [DF], proto UDP (17), length 64)
+    poclercs11-me.sofr.hefr.lan.49084 > google-public-dns-a.google.com.domain: [udp sum ok] 60163+ AAAA? openweathermap.org. (36)
+08:26:40.175216 IP (tos 0x0, ttl 51, id 31832, offset 0, flags [none], proto UDP (17), length 188)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.35024: [udp sum ok] 2041 NXDomain q: PTR? 4.0.c.f.f.f.e.f.f.f.3.e.8.0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa. 0/1/0 ns: ip6.arpa. SOA b.ip6-servers.arpa. hostmaster.icann.org. 2015122842 1800 900 604800 3600 (160)
+08:26:40.175433 IP (tos 0x0, ttl 64, id 12247, offset 0, flags [DF], proto UDP (17), length 118)
+    poclercs11-me.sofr.hefr.lan.40420 > google-public-dns-a.google.com.domain: [udp sum ok] 48412+ PTR? 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1.1.1.b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. (90)
+08:26:40.183007 IP (tos 0x0, ttl 51, id 29221, offset 0, flags [none], proto UDP (17), length 80)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.49084: [udp sum ok] 25362 q: A? openweathermap.org. 1/0/0 openweathermap.org. A 188.166.99.78 (52)
+08:26:40.183402 IP (tos 0x0, ttl 51, id 29222, offset 0, flags [none], proto UDP (17), length 151)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.49084: [udp sum ok] 60163 q: AAAA? openweathermap.org. 0/1/0 ns: openweathermap.org. SOA ns-1790.awsdns-31.co.uk. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400 (123)
+08:26:40.224817 IP (tos 0x0, ttl 51, id 61464, offset 0, flags [none], proto UDP (17), length 181)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.40420: [udp sum ok] 48412 NXDomain q: PTR? 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.1.1.1.b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. 0/1/0 ns: b.0.4.0.0.2.6.0.1.0.0.2.ip6.arpa. SOA hefrns02.hefr.ch. hostmaster.hefr.ch. 244976 10800 1080 2592000 900 (153)
+08:26:40.225033 IP (tos 0x0, ttl 64, id 12250, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.54226 > google-public-dns-a.google.com.domain: [udp sum ok] 52882+ PTR? 228.113.98.160.in-addr.arpa. (45)
+08:26:40.269875 IP (tos 0x0, ttl 51, id 61490, offset 0, flags [none], proto UDP (17), length 114)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.54226: [udp sum ok] 52882 q: PTR? 228.113.98.160.in-addr.arpa. 1/0/0 228.113.98.160.in-addr.arpa. PTR potaurea12-me.sofr.hefr.lan. (86)
+08:26:40.270000 IP (tos 0x0, ttl 64, id 12258, offset 0, flags [DF], proto UDP (17), length 68)
+    poclercs11-me.sofr.hefr.lan.55561 > google-public-dns-a.google.com.domain: [udp sum ok] 59582+ PTR? 1.0.0.224.in-addr.arpa. (40)
+08:26:40.286227 IP (tos 0x0, ttl 1, id 8115, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:40.291797 IP (tos 0x0, ttl 51, id 61496, offset 0, flags [none], proto UDP (17), length 103)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.55561: [udp sum ok] 59582 q: PTR? 1.0.0.224.in-addr.arpa. 1/0/0 1.0.0.224.in-addr.arpa. PTR all-systems.mcast.net. (75)
+08:26:40.291929 IP (tos 0x0, ttl 64, id 12259, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.53109 > google-public-dns-a.google.com.domain: [udp sum ok] 38115+ PTR? 241.114.98.160.in-addr.arpa. (45)
+08:26:40.346024 IP (tos 0x0, ttl 51, id 21420, offset 0, flags [none], proto UDP (17), length 113)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.53109: [udp sum ok] 38115 q: PTR? 241.114.98.160.in-addr.arpa. 1/0/0 241.114.98.160.in-addr.arpa. PTR eifrpoe00334.sofr.hefr.lan. (85)
+08:26:40.346148 IP (tos 0x0, ttl 64, id 12267, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.54939 > google-public-dns-a.google.com.domain: [udp sum ok] 58906+ PTR? 186.114.98.160.in-addr.arpa. (45)
+08:26:40.390197 IP (tos 0x0, ttl 1, id 8116, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:40.392199 IP (tos 0x0, ttl 51, id 29362, offset 0, flags [none], proto UDP (17), length 115)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.54939: [udp sum ok] 58906 q: PTR? 186.114.98.160.in-addr.arpa. 1/0/0 186.114.98.160.in-addr.arpa. PTR poterrema11-me.sofr.hefr.lan. (87)
+08:26:40.392333 IP (tos 0x0, ttl 64, id 12277, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.33499 > google-public-dns-a.google.com.domain: [udp sum ok] 53087+ PTR? 133.115.98.160.in-addr.arpa. (45)
+08:26:40.438819 IP (tos 0x0, ttl 51, id 61567, offset 0, flags [none], proto UDP (17), length 136)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.33499: [udp sum ok] 53087 NXDomain q: PTR? 133.115.98.160.in-addr.arpa. 0/1/0 ns: 98.160.in-addr.arpa. SOA hefrns01.hefr.ch. hostmaster.hefr.ch. 2010154894 10800 3600 2592000 900 (108)
+08:26:40.439043 IP (tos 0x0, ttl 64, id 12280, offset 0, flags [DF], proto UDP (17), length 73)
+    poclercs11-me.sofr.hefr.lan.36791 > google-public-dns-a.google.com.domain: [udp sum ok] 33691+ PTR? 124.177.97.208.in-addr.arpa. (45)
+08:26:40.461400 IP (tos 0x0, ttl 51, id 20603, offset 0, flags [none], proto UDP (17), length 122)
+    google-public-dns-a.google.com.domain > poclercs11-me.sofr.hefr.lan.36791: [udp sum ok] 33691 q: PTR? 124.177.97.208.in-addr.arpa. 1/0/0 124.177.97.208.in-addr.arpa. PTR apache2-heavy.perrier.dreamhost.com. (94)
+08:26:40.679403 IP (tos 0x0, ttl 64, id 5666, offset 0, flags [none], proto UDP (17), length 132)
+    poclercs11-me.sofr.hefr.lan.bctp > hosted.by.seedbox.io.6881: [udp sum ok] UDP, length 104
+08:26:40.703874 IP (tos 0x0, ttl 1, id 10180, offset 0, flags [none], proto UDP (17), length 684)
+    160.98.115.30.60366 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 656
+08:26:40.703887 IP (tos 0x0, ttl 1, id 8117, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:40.704561 IP (tos 0x0, ttl 1, id 15691, offset 0, flags [none], proto UDP (17), length 463)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 435
+08:26:40.705090 IP (tos 0x0, ttl 1, id 15692, offset 0, flags [none], proto UDP (17), length 529)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 501
+08:26:40.705728 IP (tos 0x0, ttl 1, id 15694, offset 0, flags [none], proto UDP (17), length 543)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 515
+08:26:40.808011 IP (tos 0x0, ttl 1, id 15695, offset 0, flags [none], proto UDP (17), length 472)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 444
+08:26:40.808532 IP (tos 0x0, ttl 1, id 15696, offset 0, flags [none], proto UDP (17), length 515)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 487
+08:26:40.809158 IP (tos 0x0, ttl 1, id 15697, offset 0, flags [none], proto UDP (17), length 527)
+    pojernes11-me.sofr.hefr.lan.ssdp > 239.255.255.250.ssdp: [udp sum ok] UDP, length 499
+08:26:40.809547 IP (tos 0x0, ttl 1, id 30704, offset 0, flags [none], proto UDP (17), length 305)
+    podupray10-me.sofr.hefr.lan.58413 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 277
+08:26:40.912220 IP (tos 0x0, ttl 1, id 10181, offset 0, flags [none], proto UDP (17), length 684)
+    160.98.115.30.60366 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 656
+08:26:41.121863 IP (tos 0x0, ttl 1, id 8118, offset 0, flags [none], proto UDP (17), length 1109)
+    pohaasm10-me.sofr.hefr.lan.61562 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 1081
+08:26:41.122363 IP (tos 0x0, ttl 1, id 10182, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.115.30.54174 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+08:26:41.225818 IP (tos 0x0, ttl 1, id 8119, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.56439 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:41.330581 IP (tos 0x0, ttl 1, id 8120, offset 0, flags [none], proto UDP (17), length 652)
+    pohaasm10-me.sofr.hefr.lan.56439 > 239.255.255.250.ws-discovery: [udp sum ok] UDP, length 624
+08:26:41.330596 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 24) :: > ff02::1:ff7a:ef95: [icmp6 sum ok] ICMP6, neighbor solicitation, length 24, who has tars
+08:26:41.330637 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) tars > ff02::1: [icmp6 sum ok] ICMP6, neighbor advertisement, length 32, tgt is tars, Flags [override]
+	  destination link-address option (2), length 8 (1): d0:7e:35:7a:ef:95
+	    0x0000:  d07e 357a ef95
+08:26:41.538913 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 24) :: > ff02::1:ff7a:ef95: [icmp6 sum ok] ICMP6, neighbor solicitation, length 24, who has tars
+08:26:41.538964 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) tars > ff02::1: [icmp6 sum ok] ICMP6, neighbor advertisement, length 32, tgt is tars, Flags [override]
+	  destination link-address option (2), length 8 (1): d0:7e:35:7a:ef:95
+	    0x0000:  d07e 357a ef95
+08:26:41.643116 IP (tos 0x0, ttl 1, id 8807, offset 0, flags [none], proto UDP (17), length 161)
+    160.98.115.76.63003 > 239.255.255.250.ssdp: [udp sum ok] UDP, length 133
+

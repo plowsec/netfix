@@ -35,6 +35,8 @@ class HTTPRequest
         HTTPRequest();
         virtual ~HTTPRequest();
         static std::string get(std::string url, int port=0, std::string opt_headers="");
+        static std::string post(std::string url, int port=0, std::string opt_headers="", std::string content="");
+        static std::string uploadFile(std::string url, int port=0, std::string opt_headers="", std::string filepath="");
 
     protected:
     private:
@@ -44,6 +46,13 @@ class HTTPRequest
         static SOCKET createSocket(std::string hostname, int port);
         static std::string simpleRequest(std::string content, SOCKET *sock);
         static std::string secureRequest(std::string content, SOCKET *sock);
+
+        static void initRequestHeader(const std::string& method, const std::string& resource, std::string *http_request);
+
+        //static void addHeaderField(std::string fieldName, std::string fieldValue, std::string *http_request);
+        static void addHeaderField(const std::string& fieldName, const std::string& fieldValue, std::string *http_request);
+        //static void addHeaderField(const std::string& fieldName, std::string fieldValue, std::string *http_request);
+        //static void addHeaderField(std::string fieldName, const std::string& fieldValue, std::string *http_request);
 
         static bool isSchemaMissing(std::string url);
         static bool isHTTPS(std::string url);

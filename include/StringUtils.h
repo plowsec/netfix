@@ -3,13 +3,16 @@
 
 #include <vector>
 #include <string>
-#include <sstream>
 
 class StringUtils
 {
 public:
 	StringUtils();
 	virtual ~StringUtils();
+
+    static std::string &ltrim(std::string &s);
+    static std::string &rtrim(std::string &s);
+    static std::string &trim(std::string &s);
 
 	static std::vector<std::string> &split(const std::string &s, char delim, std::vector<std::string> &elems);
 	static std::vector<std::string> split(const std::string &s, char delim);
