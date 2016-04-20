@@ -7,4 +7,5 @@ bin/
 *.exe
 img/*
 .vs/*
-
+netfix.vcxproj.filters
+netfix.vcxproj.user
