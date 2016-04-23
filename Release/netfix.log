@@ -1,9 +1,0 @@
-﻿  main.cpp
-main.cpp(4): fatal error C1083: Cannot open include file: 'stdafx.h': No such file or directory
-  Files.cpp
-src\Files.cpp(7): fatal error C1083: Cannot open include file: 'Files.h': No such file or directory
-  HTTPRequest.cpp
-src\HTTPRequest.cpp(4): fatal error C1083: Cannot open include file: 'stdafx.h': No such file or directory
-  StringUtils.cpp
-src\StringUtils.cpp(4): fatal error C1083: Cannot open include file: 'stdafx.h': No such file or directory
-  Generating Code...
