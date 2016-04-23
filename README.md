@@ -3,7 +3,8 @@
 A lightweight, cross-paltform HTTP library written in C++
 
 #Announcement
-netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary size is finally acceptable
+* netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary size is finally acceptable
+* Makefile added (I'm still learning how to write makefiles, feel free to criticize and improve my makefile).
 
 # Contributions guidelines
 * We are doing art, we write beautiful code (critics are most welcome)
@@ -12,7 +13,7 @@ netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary 
 * K.I.S.S (Keep it Simple, Stupid)
 
 # TODO
-* CMake with profiles for each platform
+* Improve the Makefile to make it less relying on shell commands.
 * Certs verification
 * Remove all the hardcoded stuff (done, if you find anything I might have forgotten let me know)
 * ~~Distinguish dynamically HTTP from HTTPS (only SSL currently, so divide the appropriate parts into functions) (and conquer)~~
@@ -21,7 +22,7 @@ netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary 
 * POST
 * File upload (in progress)
 * Follow redirect (hmm make the option available)
-* ~~GET RID OF THIS HEAVY **** OPENSSL WHICH PRODUCE A 1.3 *** MEGABYTES BINARY ON WINDOWS OMFG INSTEAD OF 189 KILOBYTES (done)~~
+* ~~get rid of OpenSSL (too large)~~
 * Finish to implement all the specifications of HTTP/HTTPS
 * Refactor
 
@@ -37,7 +38,7 @@ Since the migration of netfix to [WolfSSL] (https://github.com/wolfSSL/wolfssl),
 * Now you can compile netfix, but don't forget to link against wolfssl and m :p
 * If you want to statically compile netfix, build with -Xlinker -Bstatic -lwolfssl -Xlinker -Bdynamic  -lm :
 ![Code::Blocks configuration] (https://cloud.githubusercontent.com/assets/13260466/14666556/74859822-06da-11e6-80ca-16b0cd1e8e98.png)
-
+* Now netfix has a makefile, so you just download the sources and run "make".
 ## Windows
 ### MSVC
 * Download [wolfSSL] (https://wolfssl.com/wolfSSL/download/downloadForm.php) and unzip it
