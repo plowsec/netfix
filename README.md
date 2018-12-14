@@ -1,8 +1,11 @@
 # netfix
 
-A lightweight, cross-paltform HTTP library written in C++
+PoC for a lightweight, cross-paltform HTTP library written in C++
 
-#Announcement
+# Note
+Abandonned project
+
+# Announcement
 * netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary size is finally acceptable
 * Makefile added (I'm still learning how to write makefiles, feel free to criticize and improve my makefile).
 
