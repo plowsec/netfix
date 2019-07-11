@@ -3,7 +3,7 @@
 PoC for a lightweight, cross-paltform HTTP library written in C++
 
 # Note
-Abandonned project
+Abandoned project
 
 # Announcement
 * netfix has migrated to [WolfSSL] (https://github.com/wolfSSL/wolfssl) -> binary size is finally acceptable
